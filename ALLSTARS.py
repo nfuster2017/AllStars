@@ -51,7 +51,7 @@ if my_Defense == "Raiders":
 if my_Defense == "Chargers":
     def_Allowed = data["conferences"][0]["divisions"][3]["teams"][2]["points_against"]
 if my_Defense == "Broncos":
-    def_Allowed = data["conferences"][0]["divisions"][3]["teams"][3]['points_against"]
+    def_Allowed = data["conferences"][0]["divisions"][3]["teams"][3]["points_against"]
 if my_Defense == "Eagles":
     def_Allowed = data["conferences"][1]["divisions"][0]["teams"][0]["points_against"]
 if my_Defense == "Cowboys":
@@ -77,19 +77,19 @@ if my_Defense == "Falcons":
 if my_Defense == "Buccaneers":
     def_Allowed = data["conferences"][1]["divisions"][2]["teams"][3]["points_against"]
 if my_Defense == "Rams":
-    def_Allowed = data["conferences"][1]["divisions"][3]['teams'][0]['points_against']
+    def_Allowed = data["conferences"][1]["divisions"][3]["teams"][0]["points_against"]
 if my_Defense == "Seahawks":
-    def_Allowed = data["conferences"][1]["divisions"][3]['teams'][1]['points_against']
+    def_Allowed = data["conferences"][1]["divisions"][3]["teams"][1]["points_against"]
 if my_Defense == "Cardinals":
-    def_Allowed = data["conferences"][1]["divisions"][3]['teams'][2]['points_against']
+    def_Allowed = data["conferences"][1]["divisions"][3]["teams"][2]["points_against"]
 if my_Defense == "49ers":
-    def_Allowed = data["conferences"][1]["divisions"][3]['teams'][3]['points_against']
+    def_Allowed = data["conferences"][1]["divisions"][3]["teams"][3]["points_against"]
 
 
 #below is the team your defense is up against. Section determines how well their offense has played this season.
 
 
-team_Playing=input("What team are these guys playing?\n")
+team_Playing = input("What team are these guys playing?\n")
 
 if team_Playing == "Patriots":
     offense_Scored = data["conferences"][0]["divisions"][0]["teams"][0]["points_for"]
@@ -186,7 +186,7 @@ if my_Defense == "Chiefs":
 if my_Defense == "Raiders":
     sos = data["conferences"][0]["divisions"][3]["teams"][1]["strength_of_schedule"]["sos"]
 if my_Defense == "Chargers":
-    sos = data["conferences"][0]["divisions"][3]['teams'][2]['strength_of_schedule']['sos']
+    sos = data["conferences"][0]["divisions"][3]["teams"][2]["strength_of_schedule"]["sos"]
 if my_Defense == "Broncos":
     sos = data["conferences"][0]["divisions"][3]["teams"][3]["strength_of_schedule"]["sos"]
 if my_Defense == "Eagles":
@@ -311,9 +311,9 @@ print("Point Differential: ",point_Differential)
 
 
 # the point differential determines the likelihood of the defenses success, the user should track the out put and compare it to the next defenses out put to determine a winner.
-#print("it is like golf, the smaller the number the better:",point_differential)
-#if point_differential<=
-#data["conferences"][0]["divisions"][0]['teams'][0]['points_against']
+#print("it is like golf, the smaller the number the better:",point_Differential)
+#if point_Differential<=
+#data["conferences"][0]["divisions"][0]["teams"][0]["points_against"]
 
 
 
@@ -321,7 +321,7 @@ print("Point Differential: ",point_Differential)
 
 
 
-#afc = data["conferences"][0]["divisions"][0]['teams']
+#afc = data["conferences"][0]["divisions"][0]["teams"]
 #print(afc[0])
 #print(afc[2])
 #for x in afc:
