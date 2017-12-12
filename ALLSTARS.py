@@ -1,15 +1,17 @@
-#below we are importing the functions that are being called
+# Imports functions used for extracting json data
+
 import urllib.request, urllib.parse, urllib.error
 import json
 import urllib
 
 
 # Here we are accessing the URL with our trial code, which has 1000 calls.
-service_url='http://api.sportradar.us/nfl-ot2/seasontd/2017/standings.json?api_key=3238yxzhzy955v3pauctmbng'
-data= json.loads(urllib.request.urlopen(service_url).read())
 
-print("season:", data["season"]["year"])#here we are declaring the year of this season
-print("week:", data["week"]["title"])#here we are declaring the week of the season
+service_url = 'http://api.sportradar.us/nfl-ot2/seasontd/2017/standings.json?api_key=3238yxzhzy955v3pauctmbng'
+data = json.loads(urllib.request.urlopen(service_url).read())
+
+print("season:", data["season"]["year"]) # here we are declaring the year of this season
+print("week:", data["week"]["title"]) # here we are declaring the week of the season
 
 
 
@@ -84,11 +86,10 @@ if My_defense == "49ers":
     Def_allowed=data["conferences"][1]["divisions"][3]['teams'][3]['points_against']
 
 
-#below is the team your defense is up against. What it does it find out how well their offense has played this season.
+#below is the team your defense is up against. What it does is it finds out how well their offense has played this season.
 
-#for data......
 
-Team_playing=input('what team are these guys playing?\n')
+Team_playing=input('What team are these guys playing?\n')
 
 if Team_playing == "Patriots":
     offense_scored=data["conferences"][0]["divisions"][0]['teams'][0]['points_for']
