@@ -158,8 +158,154 @@ if Team_playing== "Cardinals":
 if Team_playing== "49ers":
     offense_scored=data["conferences"][1]["divisions"][3]['teams'][3]['points_for']
 
-str_=data["conferences"][1]["divisions"][3]['teams'][3]['points_for']
 
+if My_defense == "Patriots":
+    sos = data["conferences"][0]["divisions"][0]['teams'][0]['strength_of_schedule']['sos']
+if My_defense == "Bills":
+    sos =data["conferences"][0]["divisions"][0]['teams'][1]['strength_of_schedule']['sos']
+if My_defense == "Jets":
+    sos =data["conferences"][0]["divisions"][0]['teams'][2]['strength_of_schedule']['sos']
+if My_defense == "Dolphins":
+    sos =data["conferences"][0]["divisions"][0]['teams'][3]['strength_of_schedule']['sos']
+if My_defense == "Steelers":
+    sos =data["conferences"][0]["divisions"][1]['teams'][0]['strength_of_schedule']['sos']
+if My_defense == "Ravens":
+    sos =data["conferences"][0]["divisions"][1]['teams'][1]['strength_of_schedule']['sos']
+if My_defense == "Bengals":
+    sos =data["conferences"][0]["divisions"][1]['teams'][2]['strength_of_schedule']['sos']
+if My_defense == "Browns":
+    sos =data["conferences"][0]["divisions"][1]['teams'][3]['strength_of_schedule']['sos']
+if My_defense == "Titans":
+   sos =data["conferences"][0]["divisions"][2]['teams'][0]['strength_of_schedule']['sos']
+if My_defense == "Jaguars":
+    sos =data["conferences"][0]["divisions"][2]['teams'][1]['strength_of_schedule']['sos']
+if My_defense == "Texans":
+    sos =data["conferences"][0]["divisions"][2]['teams'][2]['strength_of_schedule']['sos']
+if My_defense == "Colts":
+    sos =data["conferences"][0]["divisions"][2]['teams'][3]['strength_of_schedule']['sos']
+if My_defense == "Chiefs":
+    sos =data["conferences"][0]["divisions"][3]['teams'][0]['strength_of_schedule']['sos']
+if My_defense == "Raiders":
+    sos =data["conferences"][0]["divisions"][3]['teams'][1]['strength_of_schedule']['sos']
+if My_defense == "Chargers":
+    sos =data["conferences"][0]["divisions"][3]['teams'][2]['strength_of_schedule']['sos']
+if My_defense == "Broncos":
+    sos =data["conferences"][0]["divisions"][3]['teams'][3]['strength_of_schedule']['sos']
+if My_defense == "Eagles":
+    sos =data["conferences"][1]["divisions"][0]['teams'][0]['strength_of_schedule']['sos']
+if My_defense == "Cowboys":
+    sos =data["conferences"][1]["divisions"][0]['teams'][1]['strength_of_schedule']['sos']
+if My_defense == "Redskins":
+    sos =data["conferences"][1]["divisions"][0]['teams'][2]['strength_of_schedule']['sos']
+if My_defense == "Giants":
+    sos =data["conferences"][1]["divisions"][0]['teams'][3]['strength_of_schedule']['sos']
+if My_defense == "Vikings":
+    sos =data["conferences"][1]["divisions"][1]['teams'][0]['strength_of_schedule']['sos']
+if My_defense == "Lions":
+    sos =data["conferences"][1]["divisions"][1]['teams'][1]['strength_of_schedule']['sos']
+if My_defense == "Packers":
+    sos =data["conferences"][1]["divisions"][1]['teams'][2]['strength_of_schedule']['sos']
+if My_defense == "Bears":
+    sos =data["conferences"][1]["divisions"][1]['teams'][3]['strength_of_schedule']['sos']
+if My_defense == "Saints":
+    sos =data["conferences"][1]["divisions"][2]['teams'][0]['strength_of_schedule']['sos']
+if My_defense == "Panthers":
+    sos =data["conferences"][1]["divisions"][2]['teams'][1]['strength_of_schedule']['sos']
+if My_defense == "Falcons":
+    sos =data["conferences"][1]["divisions"][2]['teams'][2]['strength_of_schedule']['sos']
+if My_defense == "Buccaneers":
+    sos =data["conferences"][1]["divisions"][2]['teams'][3]['strength_of_schedule']['sos']
+if My_defense == "Rams":
+    sos =data["conferences"][1]["divisions"][3]['teams'][0]['strength_of_schedule']['sos']
+if My_defense == "Seahawks":
+    sos =data["conferences"][1]["divisions"][3]['teams'][1]['strength_of_schedule']['sos']
+if My_defense == "Cardinals":
+    sos =data["conferences"][1]["divisions"][3]['teams'][2]['strength_of_schedule']['sos']
+if My_defense == "49ers":
+    sos =data["conferences"][1]["divisions"][3]['teams'][3]['strength_of_schedule']['sos']
+
+
+
+
+
+if Team_playing == "Patriots":
+    sos2=data["conferences"][0]["divisions"][0]['teams'][0]['strength_of_schedule']['sos']
+if Team_playing == "Bills":
+    sos2=data["conferences"][0]["divisions"][0]['teams'][1]['strength_of_schedule']['sos']
+if Team_playing == "Jets":
+    sos2=data["conferences"][0]["divisions"][0]['teams'][2]['strength_of_schedule']['sos']
+if Team_playing == "Dolphins":
+    sos2=data["conferences"][0]["divisions"][0]['teams'][3]['strength_of_schedule']['sos']
+if Team_playing== "Steelers":
+    sos2=data["conferences"][0]["divisions"][1]['teams'][0]['strength_of_schedule']['sos']
+if Team_playing == "Ravens":
+    sos2=data["conferences"][0]["divisions"][1]['teams'][1]['strength_of_schedule']['sos']
+if Team_playing == "Bengals":
+    sos2=data["conferences"][0]["divisions"][1]['teams'][2]['strength_of_schedule']['sos']
+if Team_playing == "Browns":
+    sos2=data["conferences"][0]["divisions"][1]['teams'][3]['strength_of_schedule']['sos']
+if Team_playing == "Titans":
+    sos2=data["conferences"][0]["divisions"][2]['teams'][0]['strength_of_schedule']['sos']
+if Team_playing== "Jaguars":
+    sos2=data["conferences"][0]["divisions"][2]['teams'][1]['strength_of_schedule']['sos']
+if Team_playing == "Texans":
+    sos2=data["conferences"][0]["divisions"][2]['teams'][2]['strength_of_schedule']['sos']
+if Team_playing == "Colts":
+    sos2=data["conferences"][0]["divisions"][2]['teams'][3]['strength_of_schedule']['sos']
+if Team_playing == "Chiefs":
+    sos2=data["conferences"][0]["divisions"][3]['teams'][0]['strength_of_schedule']['sos']
+if Team_playing == "Raiders":
+    sos2=data["conferences"][0]["divisions"][3]['teams'][1]['strength_of_schedule']['sos']
+if Team_playing == "Chargers":
+    sos2=data["conferences"][0]["divisions"][3]['teams'][2]['strength_of_schedule']['sos']
+if Team_playing == "Broncos":
+    sos2=data["conferences"][0]["divisions"][3]['teams'][3]['strength_of_schedule']['sos']
+if Team_playing == "Eagles":
+    sos2=data["conferences"][1]["divisions"][0]['teams'][0]['strength_of_schedule']['sos']
+if Team_playing == "Cowboys":
+    sos2=data["conferences"][1]["divisions"][0]['teams'][1]['strength_of_schedule']['sos']
+if Team_playing== "Redskins":
+    sos2=data["conferences"][1]["divisions"][0]['teams'][2]['strength_of_schedule']['sos']
+if Team_playing== "Giants":
+    sos2=data["conferences"][1]["divisions"][0]['teams'][3]['strength_of_schedule']['sos']
+if Team_playing == "Vikings":
+    sos2=data["conferences"][1]["divisions"][1]['teams'][0]['strength_of_schedule']['sos']
+if Team_playing== "Lions":
+    sos2=data["conferences"][1]["divisions"][1]['teams'][1]['strength_of_schedule']['sos']
+if Team_playing== "Packers":
+    sos2=data["conferences"][1]["divisions"][1]['teams'][2]['strength_of_schedule']['sos']
+if Team_playing== "Bears":
+    sos2=data["conferences"][1]["divisions"][1]['teams'][3]['strength_of_schedule']['sos']
+if Team_playing== "Saints":
+    sos2=data["conferences"][1]["divisions"][2]['teams'][0]['strength_of_schedule']['sos']
+if Team_playing== "Panthers":
+    sos2=data["conferences"][1]["divisions"][2]['teams'][1]['strength_of_schedule']['sos']
+if Team_playing== "Falcons":
+    sos2=data["conferences"][1]["divisions"][2]['teams'][2]['strength_of_schedule']['sos']
+if Team_playing== "Buccaneers":
+    sos2=data["conferences"][1]["divisions"][2]['teams'][3]['strength_of_schedule']['sos']
+if Team_playing== "Rams":
+    sos2=data["conferences"][1]["divisions"][3]['teams'][0]['strength_of_schedule']['sos']
+if Team_playing== "Seahawks":
+    sos2=data["conferences"][1]["divisions"][3]['teams'][1]['strength_of_schedule']['sos']
+if Team_playing== "Cardinals":
+    sos2=data["conferences"][1]["divisions"][3]['teamss'][2]['strength_of_schedule']['sos']
+if Team_playing== "49ers":
+    sos2=data["conferences"][1]["divisions"][3]['teams'][3]['strength_of_schedule']['sos']
+
+
+
+
+
+
+
+
+
+
+print("The Strength of your defenses schedule is ",sos,", the team you are playing schedule strength is",sos2,",")
+
+    
+    
 
 print("Defense allowed", Def_allowed," points, The offense they are playing scored ",offense_scored," this season.")
 point_differential= offense_scored-Def_allowed
