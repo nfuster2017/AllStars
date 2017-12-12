@@ -86,7 +86,7 @@ if My_defense == "49ers":
     Def_allowed=data["conferences"][1]["divisions"][3]['teams'][3]['points_against']
 
 
-#below is the team your defense is up against. What it does is it finds out how well their offense has played this season.
+#below is the team your defense is up against. Section determines how well their offense has played this season.
 
 
 Team_playing=input('What team are these guys playing?\n')
