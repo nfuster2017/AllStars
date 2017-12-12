@@ -11,92 +11,84 @@ data= json.loads(urllib.request.urlopen(service_url).read())
 print("season:", data["season"]["year"])#here we are declaring the year of this season
 print("week:", data["week"]["title"])#here we are declaring the week of the season
 
-#week = data["week"]["title"]
-#print(week)
 
-#print("week:", data["week"])#here we are declaring the week of the season
 
-#example
-#afc = data["conferences"][0]["divisions"][0]['teams']
-#print(afc[0])
-#print(afc[2])
-#for x in afc:
-    #print(x['strength_of_victory']['sov'])
+    
 
-#First Select the defense you are considering playing.
-#def player_stats(my_Defense):
-my_Defense = input('What defense are you going to play?(Enter their mascot name)\n')
+#First, Select the defense you are considering playing.
+
+my_Defense= input('What defense are you going to play?(Enter their mascot name)\n')
 if my_Defense == "Patriots":
-    def_Allowed = data["conferences"][0]["divisions"][0]['teams'][0]['points_against']
+    def_Allowed=data["conferences"][0]["divisions"][0]['teams'][0]['points_against']
 if my_defense == "Bills":
-    def_Allowed = data["conferences"][0]["divisions"][0]['teams'][1]['points_against']
+    def_Allowed=data["conferences"][0]["divisions"][0]['teams'][1]['points_against']
 if my_Defense == "Jets":
-    def_Allowed = data["conferences"][0]["divisions"][0]['teams'][2]['points_against']
+    def_Allowed=data["conferences"][0]["divisions"][0]['teams'][2]['points_against']
 if my_Defense == "Dolphins":
-    def_Allowed = data["conferences"][0]["divisions"][0]['teams'][3]['points_against']
+    def_Allowed=data["conferences"][0]["divisions"][0]['teams'][3]['points_against']
 if my_Defense == "Steelers":
-    def_Allowed = data["conferences"][0]["divisions"][1]['teams'][0]['points_against']
+    def_Allowed=data["conferences"][0]["divisions"][1]['teams'][0]['points_against']
 if my_Defense == "Ravens":
-    def_Allowed = data["conferences"][0]["divisions"][1]['teams'][1]['points_against']
-if my_Defense == "Bengals":
-    def_Allowed = data["conferences"][0]["divisions"][1]['teams'][2]['points_against']
-if my_Defense == "Browns":
-    def_Allowed = data["conferences"][0]["divisions"][1]['teams'][3]['points_against']
-if my_Defense == "Titans":
-   def_Allowed = data["conferences"][0]["divisions"][2]['teams'][0]['points_against']
-if my_Defense == "Jaguars":
-    def_Allowed = data["conferences"][0]["divisions"][2]['teams'][1]['points_against']
-if my_Defense == "Texans":
-    def_Allowed = data["conferences"][0]["divisions"][2]['teams'][2]['points_against']
-if my_Defense == "Colts":
-    def_Allowed = data["conferences"][0]["divisions"][2]['teams'][3]['points_against']
-if my_Defense == "Chiefs":
-    def_Allowed = data["conferences"][0]["divisions"][3]['teams'][0]['points_against']
-if my_Defense == "Raiders":
-    def_Allowed = data["conferences"][0]["divisions"][3]['teams'][1]['points_against']
-if my_Defense == "Chargers":
-    def_Allowed = data["conferences"][0]["divisions"][3]['teams'][2]['points_against']
-if my_Defense == "Broncos":
-    def_Allowed = data["conferences"][0]["divisions"][3]['teams'][3]['points_against']
-if my_Defense == "Eagles":
-    def_Allowed = data["conferences"][1]["divisions"][0]['teams'][0]['points_against']
-if my_Defense == "Cowboys":
-    def_Allowed = data["conferences"][1]["divisions"][0]['teams'][1]['points_against']
-if my_Defense == "Redskins":
-    def_Allowed = data["conferences"][1]["divisions"][0]['teams'][2]['points_against']
-if my_Defense == "Giants":
-    def_Allowed = data["conferences"][1]["divisions"][0]['teams'][3]['points_against']
-if my_Defense == "Vikings":
-    def_Allowed = data["conferences"][1]["divisions"][1]['teams'][0]['points_against']
-if my_Defense == "Lions":
-    def_Allowed = data["conferences"][1]["divisions"][1]['teams'][1]['points_against']
-if my_Defense == "Packers":
-    def_Allowed = data["conferences"][1]["divisions"][1]['teams'][2]['points_against']
-if my_Defense == "Bears":
-    def_Allowed = data["conferences"][1]["divisions"][1]['teams'][3]['points_against']
-if my_Defense == "Saints":
-    def_Allowed = data["conferences"][1]["divisions"][2]['teams'][0]['points_against']
-if my_Defense == "Panthers":
-    def_Allowed = data["conferences"][1]["divisions"][2]['teams'][1]['points_against']
-if my_Defense == "Falcons":
-    def_Allowed = data["conferences"][1]["divisions"][2]['teams'][2]['points_against']
-if my_Defense == "Buccaneers":
-    def_Allowed = data["conferences"][1]["divisions"][2]['teams'][3]['points_against']
-if my_Defense == "Rams":
-    def_Allowed = data["conferences"][1]["divisions"][3]['teams'][0]['points_against']
-if my_Defense == "Seahawks":
-    def_Allowed = data["conferences"][1]["divisions"][3]['teams'][1]['points_against']
-if my_Defense == "Cardinals":
-    def_Allowed = data["conferences"][1]["divisions"][3]['teams'][2]['points_against']
-if my_Defense == "49ers":
-    def_Allowed = data["conferences"][1]["divisions"][3]['teams'][3]['points_against']
+    Def_allowed=data["conferences"][0]["divisions"][1]['teams'][1]['points_against']
+if My_defense == "Bengals":
+    Def_allowed=data["conferences"][0]["divisions"][1]['teams'][2]['points_against']
+if My_defense == "Browns":
+    Def_allowed=data["conferences"][0]["divisions"][1]['teams'][3]['points_against']
+if My_defense == "Titans":
+    Def_allowed=data["conferences"][0]["divisions"][2]['teams'][0]['points_against']
+if My_defense == "Jaguars":
+    Def_allowed=data["conferences"][0]["divisions"][2]['teams'][1]['points_against']
+if My_defense == "Texans":
+    Def_allowed=data["conferences"][0]["divisions"][2]['teams'][2]['points_against']
+if My_defense == "Colts":
+    Def_allowed=data["conferences"][0]["divisions"][2]['teams'][3]['points_against']
+if My_defense == "Chiefs":
+    Def_allowed=data["conferences"][0]["divisions"][3]['teams'][0]['points_against']
+if My_defense == "Raiders":
+    Def_allowed=data["conferences"][0]["divisions"][3]['teams'][1]['points_against']
+if My_defense == "Chargers":
+    Def_allowed=data["conferences"][0]["divisions"][3]['teams'][2]['points_against']
+if My_defense == "Broncos":
+    Def_allowed=data["conferences"][0]["divisions"][3]['teams'][3]['points_against']
+if My_defense == "Eagles":
+    Def_allowed=data["conferences"][1]["divisions"][0]['teams'][0]['points_against']
+if My_defense == "Cowboys":
+    Def_allowed=data["conferences"][1]["divisions"][0]['teams'][1]['points_against']
+if My_defense == "Redskins":
+    Def_allowed=data["conferences"][1]["divisions"][0]['teams'][2]['points_against']
+if My_defense == "Giants":
+    Def_allowed=data["conferences"][1]["divisions"][0]['teams'][3]['points_against']
+if My_defense == "Vikings":
+    Def_allowed=data["conferences"][1]["divisions"][1]['teams'][0]['points_against']
+if My_defense == "Lions":
+    Def_allowed=data["conferences"][1]["divisions"][1]['teams'][1]['points_against']
+if My_defense == "Packers":
+    Def_allowed=data["conferences"][1]["divisions"][1]['teams'][2]['points_against']
+if My_defense == "Bears":
+    Def_allowed=data["conferences"][1]["divisions"][1]['teams'][3]['points_against']
+if My_defense == "Saints":
+    Def_allowed=data["conferences"][1]["divisions"][2]['teams'][0]['points_against']
+if My_defense == "Panthers":
+    Def_allowed=data["conferences"][1]["divisions"][2]['teams'][1]['points_against']
+if My_defense == "Falcons":
+    Def_allowed=data["conferences"][1]["divisions"][2]['teams'][2]['points_against']
+if My_defense == "Buccaneers":
+    Def_allowed=data["conferences"][1]["divisions"][2]['teams'][3]['points_against']
+if My_defense == "Rams":
+    Def_allowed=data["conferences"][1]["divisions"][3]['teams'][0]['points_against']
+if My_defense == "Seahawks":
+    Def_allowed=data["conferences"][1]["divisions"][3]['teams'][1]['points_against']
+if My_defense == "Cardinals":
+    Def_allowed=data["conferences"][1]["divisions"][3]['teams'][2]['points_against']
+if My_defense == "49ers":
+    Def_allowed=data["conferences"][1]["divisions"][3]['teams'][3]['points_against']
 
 
 #below is the team your defense is up against. What it does it find out how well their offense has played this season.
 
 #for data......
 
-team_Playing = input('what team are these guys playing?\n')
+Team_playing=input('what team are these guys playing?\n')
 
 if Team_playing == "Patriots":
     offense_scored=data["conferences"][0]["divisions"][0]['teams'][0]['points_for']
@@ -178,5 +170,14 @@ print("Point Differential: ",point_differential)
 #if point_differential<=
 #data["conferences"][0]["divisions"][0]['teams'][0]['points_against']
 
-#user_input = input(bjsakbja)
-#playerstat(user_input)
+
+
+#For loop example
+
+
+
+#afc = data["conferences"][0]["divisions"][0]['teams']
+#print(afc[0])
+#print(afc[2])
+#for x in afc:
+    #print(x['strength_of_victory']['sov'])
