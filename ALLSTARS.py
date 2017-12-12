@@ -19,210 +19,208 @@ print("week:", data["week"]["title"]) # here we are declaring the week of the se
 
 #First, Select the defense you are considering playing.
 
-my_Defense= input('What defense are you going to play?(Enter their mascot name)\n')
+my_Defense = input("What defense are you going to play?(Enter their mascot name)\n")
 if my_Defense == "Patriots":
-    def_Allowed=data["conferences"][0]["divisions"][0]['teams'][0]['points_against']
+    def_Allowed = data["conferences"][0]["divisions"][0]["teams"][0]["points_against"]
 if my_defense == "Bills":
-    def_Allowed=data["conferences"][0]["divisions"][0]['teams'][1]['points_against']
+    def_Allowed = data["conferences"][0]["divisions"][0]["teams"][1]["points_against"]
 if my_Defense == "Jets":
-    def_Allowed=data["conferences"][0]["divisions"][0]['teams'][2]['points_against']
+    def_Allowed = data["conferences"][0]["divisions"][0]["teams"][2]["points_against"]
 if my_Defense == "Dolphins":
-    def_Allowed=data["conferences"][0]["divisions"][0]['teams'][3]['points_against']
+    def_Allowed = data["conferences"][0]["divisions"][0]["teams"][3]["points_against"]
 if my_Defense == "Steelers":
-    def_Allowed=data["conferences"][0]["divisions"][1]['teams'][0]['points_against']
+    def_Allowed = data["conferences"][0]["divisions"][1]["teams"][0]["points_against"]
 if my_Defense == "Ravens":
-    Def_allowed=data["conferences"][0]["divisions"][1]['teams'][1]['points_against']
-if My_defense == "Bengals":
-    Def_allowed=data["conferences"][0]["divisions"][1]['teams'][2]['points_against']
-if My_defense == "Browns":
-    Def_allowed=data["conferences"][0]["divisions"][1]['teams'][3]['points_against']
-if My_defense == "Titans":
-    Def_allowed=data["conferences"][0]["divisions"][2]['teams'][0]['points_against']
-if My_defense == "Jaguars":
-    Def_allowed=data["conferences"][0]["divisions"][2]['teams'][1]['points_against']
-if My_defense == "Texans":
-    Def_allowed=data["conferences"][0]["divisions"][2]['teams'][2]['points_against']
-if My_defense == "Colts":
-    Def_allowed=data["conferences"][0]["divisions"][2]['teams'][3]['points_against']
-if My_defense == "Chiefs":
-    Def_allowed=data["conferences"][0]["divisions"][3]['teams'][0]['points_against']
-if My_defense == "Raiders":
-    Def_allowed=data["conferences"][0]["divisions"][3]['teams'][1]['points_against']
-if My_defense == "Chargers":
-    Def_allowed=data["conferences"][0]["divisions"][3]['teams'][2]['points_against']
-if My_defense == "Broncos":
-    Def_allowed=data["conferences"][0]["divisions"][3]['teams'][3]['points_against']
-if My_defense == "Eagles":
-    Def_allowed=data["conferences"][1]["divisions"][0]['teams'][0]['points_against']
-if My_defense == "Cowboys":
-    Def_allowed=data["conferences"][1]["divisions"][0]['teams'][1]['points_against']
-if My_defense == "Redskins":
-    Def_allowed=data["conferences"][1]["divisions"][0]['teams'][2]['points_against']
-if My_defense == "Giants":
-    Def_allowed=data["conferences"][1]["divisions"][0]['teams'][3]['points_against']
-if My_defense == "Vikings":
-    Def_allowed=data["conferences"][1]["divisions"][1]['teams'][0]['points_against']
-if My_defense == "Lions":
-    Def_allowed=data["conferences"][1]["divisions"][1]['teams'][1]['points_against']
-if My_defense == "Packers":
-    Def_allowed=data["conferences"][1]["divisions"][1]['teams'][2]['points_against']
-if My_defense == "Bears":
-    Def_allowed=data["conferences"][1]["divisions"][1]['teams'][3]['points_against']
-if My_defense == "Saints":
-    Def_allowed=data["conferences"][1]["divisions"][2]['teams'][0]['points_against']
-if My_defense == "Panthers":
-    Def_allowed=data["conferences"][1]["divisions"][2]['teams'][1]['points_against']
-if My_defense == "Falcons":
-    Def_allowed=data["conferences"][1]["divisions"][2]['teams'][2]['points_against']
-if My_defense == "Buccaneers":
-    Def_allowed=data["conferences"][1]["divisions"][2]['teams'][3]['points_against']
-if My_defense == "Rams":
-    Def_allowed=data["conferences"][1]["divisions"][3]['teams'][0]['points_against']
-if My_defense == "Seahawks":
-    Def_allowed=data["conferences"][1]["divisions"][3]['teams'][1]['points_against']
-if My_defense == "Cardinals":
-    Def_allowed=data["conferences"][1]["divisions"][3]['teams'][2]['points_against']
-if My_defense == "49ers":
-    Def_allowed=data["conferences"][1]["divisions"][3]['teams'][3]['points_against']
+    def_Allowed = data["conferences"][0]["divisions"][1]["teams"][1]["points_against"]
+if my_Defense == "Bengals":
+    def_Allowed = data["conferences"][0]["divisions"][1]["teams"][2]["points_against"]
+if my_Defense == "Browns":
+    def_Allowed = data["conferences"][0]["divisions"][1]["teams"][3]["points_against"]
+if my_Defense == "Titans":
+    def_Allowed = data["conferences"][0]["divisions"][2]["teams"][0]["points_against"]
+if my_Defense == "Jaguars":
+    def_Allowed = data["conferences"][0]["divisions"][2]["teams"][1]["points_against"]
+if my_Defense == "Texans":
+    def_Allowed = data["conferences"][0]["divisions"][2]["teams"][2]["points_against"]
+if my_Defense == "Colts":
+    def_Allowed = data["conferences"][0]["divisions"][2]["teams"][3]["points_against"]
+if my_Defense == "Chiefs":
+    def_Allowed = data["conferences"][0]["divisions"][3]["teams"][0]["points_against"]
+if my_Defense == "Raiders":
+    def_Allowed = data["conferences"][0]["divisions"][3]["teams"][1]["points_against"]
+if my_Defense == "Chargers":
+    def_Allowed = data["conferences"][0]["divisions"][3]["teams"][2]["points_against"]
+if my_Defense == "Broncos":
+    def_Allowed = data["conferences"][0]["divisions"][3]["teams"][3]['points_against"]
+if my_Defense == "Eagles":
+    def_Allowed = data["conferences"][1]["divisions"][0]["teams"][0]["points_against"]
+if my_Defense == "Cowboys":
+    def_Allowed = data["conferences"][1]["divisions"][0]["teams"][1]["points_against"]
+if my_Defense == "Redskins":
+    def_Allowed = data["conferences"][1]["divisions"][0]["teams"][2]["points_against"]
+if my_Defense == "Giants":
+    def_Allowed = data["conferences"][1]["divisions"][0]["teams"][3]["points_against"]
+if my_Defense == "Vikings":
+    def_Allowed = data["conferences"][1]["divisions"][1]["teams"][0]["points_against"]
+if my_Defense == "Lions":
+    def_Allowed = data["conferences"][1]["divisions"][1]["teams"][1]["points_against"]
+if my_Defense == "Packers":
+    def_Allowed = data["conferences"][1]["divisions"][1]["teams"][2]["points_against"]
+if my_Defense == "Bears":
+    def_Allowed = data["conferences"][1]["divisions"][1]["teams"][3]["points_against"]
+if my_Defense == "Saints":
+    def_Allowed = data["conferences"][1]["divisions"][2]["teams"][0]["points_against"]
+if my_Defense == "Panthers":
+    def_Allowed = data["conferences"][1]["divisions"][2]["teams"][1]["points_against"]
+if my_Defense == "Falcons":
+    def_Allowed = data["conferences"][1]["divisions"][2]["teams"][2]["points_against"]
+if my_Defense == "Buccaneers":
+    def_Allowed = data["conferences"][1]["divisions"][2]["teams"][3]["points_against"]
+if my_Defense == "Rams":
+    def_Allowed = data["conferences"][1]["divisions"][3]['teams'][0]['points_against']
+if my_Defense == "Seahawks":
+    def_Allowed = data["conferences"][1]["divisions"][3]['teams'][1]['points_against']
+if my_Defense == "Cardinals":
+    def_Allowed = data["conferences"][1]["divisions"][3]['teams'][2]['points_against']
+if my_Defense == "49ers":
+    def_Allowed = data["conferences"][1]["divisions"][3]['teams'][3]['points_against']
 
 
 #below is the team your defense is up against. Section determines how well their offense has played this season.
 
 
-Team_playing=input('What team are these guys playing?\n')
+team_Playing=input("What team are these guys playing?\n")
 
-if Team_playing == "Patriots":
-    offense_scored=data["conferences"][0]["divisions"][0]['teams'][0]['points_for']
-if Team_playing == "Bills":
-    offense_scored=data["conferences"][0]["divisions"][0]['teams'][1]['points_for']
-if Team_playing == "Jets":
-    offense_scored=data["conferences"][0]["divisions"][0]['teams'][2]['points_for']
-if Team_playing == "Dolphins":
-    offense_scored=data["conferences"][0]["divisions"][0]['teams'][3]['points_for']
-if Team_playing== "Steelers":
-    offense_scored=data["conferences"][0]["divisions"][1]['teams'][0]['points_for']
-if Team_playing == "Ravens":
-    offense_scored=data["conferences"][0]["divisions"][1]['teams'][1]['points_for']
-if Team_playing == "Bengals":
-    offense_scored=data["conferences"][0]["divisions"][1]['teams'][2]['points_for']
-if Team_playing == "Browns":
-    offense_scored=data["conferences"][0]["divisions"][1]['teams'][3]['points_for']
-if Team_playing == "Titans":
-    offense_scored=data["conferences"][0]["divisions"][2]['teams'][0]['points_for']
-if Team_playing== "Jaguars":
-    offense_scored=data["conferences"][0]["divisions"][2]['teams'][1]['points_for']
-if Team_playing == "Texans":
-    offense_scored=data["conferences"][0]["divisions"][2]['teams'][2]['points_for']
-if Team_playing == "Colts":
-    offense_scored=data["conferences"][0]["divisions"][2]['teams'][3]['points_for']
-if Team_playing == "Chiefs":
-    offense_scored=data["conferences"][0]["divisions"][3]['teams'][0]['points_for']
-if Team_playing == "Raiders":
-    offense_scored=data["conferences"][0]["divisions"][3]['teams'][1]['points_for']
-if Team_playing == "Chargers":
-    offense_scored=data["conferences"][0]["divisions"][3]['teams'][2]['points_for']
-if Team_playing == "Broncos":
-    offense_scored=data["conferences"][0]["divisions"][3]['teams'][3]['points_for']
-if Team_playing == "Eagles":
-    offense_scored=data["conferences"][1]["divisions"][0]['teams'][0]['points_for']
-
-if Team_playing == "Cowboys":
-    offense_scored=data["conferences"][1]["divisions"][0]['teams'][1]['points_for']
-
-if Team_playing== "Redskins":
-    offense_scored=data["conferences"][1]["divisions"][0]['teams'][2]['points_for']
-if Team_playing== "Giants":
-    offense_scored=data["conferences"][1]["divisions"][0]['teams'][3]['points_for']
-if Team_playing == "Vikings":
-    offense_scored=data["conferences"][1]["divisions"][1]['teams'][0]['points_for']
-if Team_playing== "Lions":
-    offense_scored=data["conferences"][1]["divisions"][1]['teams'][1]['points_for']
-if Team_playing== "Packers":
-    offense_scored=data["conferences"][1]["divisions"][1]['teams'][2]['points_for']
-if Team_playing== "Bears":
-    offense_scored=data["conferences"][1]["divisions"][1]['teams'][3]['points_for']
-if Team_playing== "Saints":
-    offense_scored=data["conferences"][1]["divisions"][2]['teams'][0]['points_for']
-if Team_playing== "Panthers":
-    offense_scored=data["conferences"][1]["divisions"][2]['teams'][1]['points_for']
-if Team_playing== "Falcons":
-    offense_scored=data["conferences"][1]["divisions"][2]['teams'][2]['points_for']
-if Team_playing== "Buccaneers":
-    offense_scored=data["conferences"][1]["divisions"][2]['teams'][3]['points_for']
-if Team_playing== "Rams":
-    offense_scored=data["conferences"][1]["divisions"][3]['teams'][0]['points_for']
-if Team_playing== "Seahawks":
-    offense_scored=data["conferences"][1]["divisions"][3]['teams'][1]['points_for']
-if Team_playing== "Cardinals":
-    offense_scored=data["conferences"][1]["divisions"][3]['teamss'][2]['points_for']
-if Team_playing== "49ers":
-    offense_scored=data["conferences"][1]["divisions"][3]['teams'][3]['points_for']
+if team_Playing == "Patriots":
+    offense_Scored = data["conferences"][0]["divisions"][0]["teams"][0]["points_for"]
+if team_Playing == "Bills":
+    offense_Scored = data["conferences"][0]["divisions"][0]["teams"][1]["points_for"]
+if team_Playing == "Jets":
+    offense_Scored = data["conferences"][0]["divisions"][0]["teams"][2]["points_for"]
+if team_Playing == "Dolphins":
+    offense_Scored = data["conferences"][0]["divisions"][0]["teams"][3]["points_for"]
+if team_Playing == "Steelers":
+    offense_Scored = data["conferences"][0]["divisions"][1]["teams"][0]["points_for"]
+if team_Playing == "Ravens":
+    offense_Scored = data["conferences"][0]["divisions"][1]["teams"][1]["points_for"]
+if Team_Playing == "Bengals":
+    offense_Scored = data["conferences"][0]["divisions"][1]["teams"][2]["points_for"]
+if team_Playing == "Browns":
+    offense_Scored = data["conferences"][0]["divisions"][1]["teams"][3]["points_for"]
+if team_Playing == "Titans":
+    offense_Scored = data["conferences"][0]["divisions"][2]["teams"][0]["points_for"]
+if team_Playing == "Jaguars":
+    offense_Scored = data["conferences"][0]["divisions"][2]["teams"][1]["points_for"]
+if team_Playing == "Texans":
+    offense_Scored = data["conferences"][0]["divisions"][2]["teams"][2]["points_for"]
+if team_Playing == "Colts":
+    offense_Scored = data["conferences"][0]["divisions"][2]["teams"][3]["points_for"]
+if team_Playing == "Chiefs":
+    offense_Scored = data["conferences"][0]["divisions"][3]["teams"][0]["points_for"]
+if team_Playing == "Raiders":
+    offense_Scored = data["conferences"][0]["divisions"][3]["teams"][1]["points_for"]
+if team_Playing == "Chargers":
+    offense_Scored = data["conferences"][0]["divisions"][3]["teams"][2]["points_for"]
+if team_Playing == "Broncos":
+    offense_Scored = data["conferences"][0]["divisions"][3]["teams"][3]["points_for"]
+if team_Playing == "Eagles":
+    offense_Scored = data["conferences"][1]["divisions"][0]["teams"][0]["points_for"]
+if team_Playing == "Cowboys":
+    offense_Scored = data["conferences"][1]["divisions"][0]["teams"][1]["points_for"]
+if team_Playing == "Redskins":
+    offense_Scored = data["conferences"][1]["divisions"][0]["teams"][2]["points_for"]
+if team_Playing == "Giants":
+    offense_Scored = data["conferences"][1]["divisions"][0]["teams"][3]["points_for"]
+if team_Playing == "Vikings":
+    offense_Scored = data["conferences"][1]["divisions"][1]["teams"][0]["points_for"]
+if team_Playing == "Lions":
+    offense_Scored = data["conferences"][1]["divisions"][1]["teams"][1]["points_for"]
+if team_Playing == "Packers":
+    offense_Scored = data["conferences"][1]["divisions"][1]["teams"][2]["points_for"]
+if team_Playing == "Bears":
+    offense_Scored = data["conferences"][1]["divisions"][1]["teams"][3]["points_for"]
+if team_Playing == "Saints":
+    offense_Scored = data["conferences"][1]["divisions"][2]["teams"][0]["points_for"]
+if team_Playing == "Panthers":
+    offense_Scored = data["conferences"][1]["divisions"][2]["teams"][1]["points_for"]
+if team_Playing == "Falcons":
+    offense_Scored = data["conferences"][1]["divisions"][2]["teams"][2]["points_for"]
+if team_Playing == "Buccaneers":
+    offense_Scored = data["conferences"][1]["divisions"][2]["teams"][3]["points_for"]
+if team_Playin g== "Rams":
+    offense_Scored =data["conferences"][1]["divisions"][3]["teams"][0]["points_for"]
+if team_playing == "Seahawks":
+    offense_Scored = data["conferences"][1]["divisions"][3]["teams"][1]["points_for"]
+if team_Playing == "Cardinals":
+    offense_Scored = data["conferences"][1]["divisions"][3]["teamss"][2]["points_for"]
+if team_Playing == "49ers":
+    offense_Scored = data["conferences"][1]["divisions"][3]["teams"][3]["points_for"]
 
 
-if My_defense == "Patriots":
+if my_Defense == "Patriots":
     sos = data["conferences"][0]["divisions"][0]['teams'][0]['strength_of_schedule']['sos']
-if My_defense == "Bills":
+if my_Defense == "Bills":
     sos =data["conferences"][0]["divisions"][0]['teams'][1]['strength_of_schedule']['sos']
-if My_defense == "Jets":
+if my_Defense == "Jets":
     sos =data["conferences"][0]["divisions"][0]['teams'][2]['strength_of_schedule']['sos']
-if My_defense == "Dolphins":
+if my_Defense == "Dolphins":
     sos =data["conferences"][0]["divisions"][0]['teams'][3]['strength_of_schedule']['sos']
-if My_defense == "Steelers":
+if my_Defense == "Steelers":
     sos =data["conferences"][0]["divisions"][1]['teams'][0]['strength_of_schedule']['sos']
-if My_defense == "Ravens":
+if my_Defense == "Ravens":
     sos =data["conferences"][0]["divisions"][1]['teams'][1]['strength_of_schedule']['sos']
-if My_defense == "Bengals":
+if my_Defense == "Bengals":
     sos =data["conferences"][0]["divisions"][1]['teams'][2]['strength_of_schedule']['sos']
-if My_defense == "Browns":
-    sos =data["conferences"][0]["divisions"][1]['teams'][3]['strength_of_schedule']['sos']
-if My_defense == "Titans":
-   sos =data["conferences"][0]["divisions"][2]['teams'][0]['strength_of_schedule']['sos']
-if My_defense == "Jaguars":
-    sos =data["conferences"][0]["divisions"][2]['teams'][1]['strength_of_schedule']['sos']
-if My_defense == "Texans":
-    sos =data["conferences"][0]["divisions"][2]['teams'][2]['strength_of_schedule']['sos']
-if My_defense == "Colts":
-    sos =data["conferences"][0]["divisions"][2]['teams'][3]['strength_of_schedule']['sos']
-if My_defense == "Chiefs":
-    sos =data["conferences"][0]["divisions"][3]['teams'][0]['strength_of_schedule']['sos']
-if My_defense == "Raiders":
-    sos =data["conferences"][0]["divisions"][3]['teams'][1]['strength_of_schedule']['sos']
-if My_defense == "Chargers":
-    sos =data["conferences"][0]["divisions"][3]['teams'][2]['strength_of_schedule']['sos']
-if My_defense == "Broncos":
-    sos =data["conferences"][0]["divisions"][3]['teams'][3]['strength_of_schedule']['sos']
-if My_defense == "Eagles":
-    sos =data["conferences"][1]["divisions"][0]['teams'][0]['strength_of_schedule']['sos']
-if My_defense == "Cowboys":
-    sos =data["conferences"][1]["divisions"][0]['teams'][1]['strength_of_schedule']['sos']
-if My_defense == "Redskins":
-    sos =data["conferences"][1]["divisions"][0]['teams'][2]['strength_of_schedule']['sos']
-if My_defense == "Giants":
-    sos =data["conferences"][1]["divisions"][0]['teams'][3]['strength_of_schedule']['sos']
-if My_defense == "Vikings":
-    sos =data["conferences"][1]["divisions"][1]['teams'][0]['strength_of_schedule']['sos']
-if My_defense == "Lions":
-    sos =data["conferences"][1]["divisions"][1]['teams'][1]['strength_of_schedule']['sos']
-if My_defense == "Packers":
-    sos =data["conferences"][1]["divisions"][1]['teams'][2]['strength_of_schedule']['sos']
-if My_defense == "Bears":
-    sos =data["conferences"][1]["divisions"][1]['teams'][3]['strength_of_schedule']['sos']
-if My_defense == "Saints":
-    sos =data["conferences"][1]["divisions"][2]['teams'][0]['strength_of_schedule']['sos']
-if My_defense == "Panthers":
-    sos =data["conferences"][1]["divisions"][2]['teams'][1]['strength_of_schedule']['sos']
-if My_defense == "Falcons":
-    sos =data["conferences"][1]["divisions"][2]['teams'][2]['strength_of_schedule']['sos']
-if My_defense == "Buccaneers":
-    sos =data["conferences"][1]["divisions"][2]['teams'][3]['strength_of_schedule']['sos']
-if My_defense == "Rams":
-    sos =data["conferences"][1]["divisions"][3]['teams'][0]['strength_of_schedule']['sos']
-if My_defense == "Seahawks":
-    sos =data["conferences"][1]["divisions"][3]['teams'][1]['strength_of_schedule']['sos']
-if My_defense == "Cardinals":
-    sos =data["conferences"][1]["divisions"][3]['teams'][2]['strength_of_schedule']['sos']
-if My_defense == "49ers":
-    sos =data["conferences"][1]["divisions"][3]['teams'][3]['strength_of_schedule']['sos']
+if my_Defense == "Browns":
+    sos = data["conferences"][0]["divisions"][1]['teams'][3]['strength_of_schedule']['sos']
+if my_Defense == "Titans":
+   sos = data["conferences"][0]["divisions"][2]['teams'][0]['strength_of_schedule']['sos']
+if my_Defense == "Jaguars":
+    sos = data["conferences"][0]["divisions"][2]['teams'][1]['strength_of_schedule']['sos']
+if my_Defense == "Texans":
+    sos = data["conferences"][0]["divisions"][2]['teams'][2]['strength_of_schedule']['sos']
+if my_Defense == "Colts":
+    sos = data["conferences"][0]["divisions"][2]['teams'][3]['strength_of_schedule']['sos']
+if my_Defense == "Chiefs":
+    sos = data["conferences"][0]["divisions"][3]['teams'][0]['strength_of_schedule']['sos']
+if my_Defense == "Raiders":
+    sos = data["conferences"][0]["divisions"][3]['teams'][1]['strength_of_schedule']['sos']
+if my_Defense == "Chargers":
+    sos = data["conferences"][0]["divisions"][3]['teams'][2]['strength_of_schedule']['sos']
+if my_Defense == "Broncos":
+    sos = data["conferences"][0]["divisions"][3]['teams'][3]['strength_of_schedule']['sos']
+if my_Defense == "Eagles":
+    sos = data["conferences"][1]["divisions"][0]['teams'][0]['strength_of_schedule']['sos']
+if my_Defense == "Cowboys":
+    sos = data["conferences"][1]["divisions"][0]['teams'][1]['strength_of_schedule']['sos']
+if my_Defense == "Redskins":
+    sos = data["conferences"][1]["divisions"][0]['teams'][2]['strength_of_schedule']['sos']
+if my_Defense == "Giants":
+    sos = data["conferences"][1]["divisions"][0]['teams'][3]['strength_of_schedule']['sos']
+if my_Defense == "Vikings":
+    sos = data["conferences"][1]["divisions"][1]['teams'][0]['strength_of_schedule']['sos']
+if my_Defense == "Lions":
+    sos = data["conferences"][1]["divisions"][1]['teams'][1]['strength_of_schedule']['sos']
+if my_Defense == "Packers":
+    sos = data["conferences"][1]["divisions"][1]['teams'][2]['strength_of_schedule']['sos']
+if my_Defense == "Bears":
+    sos = data["conferences"][1]["divisions"][1]['teams'][3]['strength_of_schedule']['sos']
+if my_Defense == "Saints":
+    sos = data["conferences"][1]["divisions"][2]['teams'][0]['strength_of_schedule']['sos']
+if my_Defense == "Panthers":
+    sos = data["conferences"][1]["divisions"][2]['teams'][1]['strength_of_schedule']['sos']
+if my_Defense == "Falcons":
+    sos = data["conferences"][1]["divisions"][2]['teams'][2]['strength_of_schedule']['sos']
+if my_Defense == "Buccaneers":
+    sos = data["conferences"][1]["divisions"][2]['teams'][3]['strength_of_schedule']['sos']
+if my_Defense == "Rams":
+    sos = data["conferences"][1]["divisions"][3]['teams'][0]['strength_of_schedule']['sos']
+if my_Defense == "Seahawks":
+    sos = data["conferences"][1]["divisions"][3]['teams'][1]['strength_of_schedule']['sos']
+if my_Defense == "Cardinals":
+    sos = data["conferences"][1]["divisions"][3]['teams'][2]['strength_of_schedule']['sos']
+if my_Defense == "49ers":
+    sos = data["conferences"][1]["divisions"][3]['teams'][3]['strength_of_schedule']['sos']
 
 
 
