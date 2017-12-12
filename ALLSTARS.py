@@ -24,19 +24,19 @@ print("week:", data["week"]["title"])#here we are declaring the week of the seas
     #print(x['strength_of_victory']['sov'])
 
 #First Select the defense you are considering playing.
-#def player_stats(My_defense):
-My_defense= input('What defense are you going to play?(Enter their mascot name)\n')
-if My_defense == "Patriots":
-    Def_allowed=data["conferences"][0]["divisions"][0]['teams'][0]['points_against']
-if My_defense == "Bills":
-    Def_allowed=data["conferences"][0]["divisions"][0]['teams'][1]['points_against']
-if My_defense == "Jets":
-    Def_allowed=data["conferences"][0]["divisions"][0]['teams'][2]['points_against']
-if My_defense == "Dolphins":
-    Def_allowed=data["conferences"][0]["divisions"][0]['teams'][3]['points_against']
-if My_defense == "Steelers":
-    Def_allowed=data["conferences"][0]["divisions"][1]['teams'][0]['points_against']
-if My_defense == "Ravens":
+#def player_stats(my_Defense):
+my_Defense= input('What defense are you going to play?(Enter their mascot name)\n')
+if my_Defense == "Patriots":
+    def_Allowed=data["conferences"][0]["divisions"][0]['teams'][0]['points_against']
+if my_defense == "Bills":
+    def_Allowed=data["conferences"][0]["divisions"][0]['teams'][1]['points_against']
+if my_Defense == "Jets":
+    def_Allowed=data["conferences"][0]["divisions"][0]['teams'][2]['points_against']
+if my_Defense == "Dolphins":
+    def_Allowed=data["conferences"][0]["divisions"][0]['teams'][3]['points_against']
+if my_Defense == "Steelers":
+    def_Allowed=data["conferences"][0]["divisions"][1]['teams'][0]['points_against']
+if my_Defense == "Ravens":
     Def_allowed=data["conferences"][0]["divisions"][1]['teams'][1]['points_against']
 if My_defense == "Bengals":
     Def_allowed=data["conferences"][0]["divisions"][1]['teams'][2]['points_against']
