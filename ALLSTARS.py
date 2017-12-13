@@ -4,20 +4,15 @@ import urllib.request, urllib.parse, urllib.error
 import json
 import urllib
 
-
 # Here we are accessing the URL with our trial code, which has 1000 calls.
 
 service_url = 'http://api.sportradar.us/nfl-ot2/seasontd/2017/standings.json?api_key=3238yxzhzy955v3pauctmbng'
 data = json.loads(urllib.request.urlopen(service_url).read())
 
-print("season:", data["season"]["year"]) # here we are declaring the year of this season
-print("week:", data["week"]["title"]) # here we are declaring the week of the season
+print("season:", data["season"]["year"])  # here we are declaring the year of this season
+print("week:", data["week"]["title"])  # here we are declaring the week of the season
 
-
-
-    
-
-#First, Select the first defense that you are considering playing.
+# First, Select the first defense that you are considering playing.
 
 my_Defense = input("What defense are you going to play?(Enter their mascot name)\n")
 
@@ -85,12 +80,12 @@ if my_Defense == "Cardinals":
     def_Allowed = data["conferences"][1]["divisions"][3]["teams"][2]["points_against"]
 if my_Defense == "49ers":
     def_Allowed = data["conferences"][1]["divisions"][3]["teams"][3]["points_against"]
-print("Your first choice for defense is:" my_Defense)
+print("Your first choice for defense is:" + " " + my_Defense )
 
-#Below is the team your first option defense is up against. Section determines how well their offense has played this season.
+# Below is the team your first option defense is up against. Section determines how well their offense has played this season.
 
 
-team_Playing = input("What team are these guys playing?\n")
+team_Playing = input("What team are they playing?\n")
 
 if team_Playing == "Patriots":
     offense_Scored = data["conferences"][0]["divisions"][0]["teams"][0]["points_for"]
@@ -104,7 +99,7 @@ if team_Playing == "Steelers":
     offense_Scored = data["conferences"][0]["divisions"][1]["teams"][0]["points_for"]
 if team_Playing == "Ravens":
     offense_Scored = data["conferences"][0]["divisions"][1]["teams"][1]["points_for"]
-if Team_Playing == "Bengals":
+if team_Playing == "Bengals":
     offense_Scored = data["conferences"][0]["divisions"][1]["teams"][2]["points_for"]
 if team_Playing == "Browns":
     offense_Scored = data["conferences"][0]["divisions"][1]["teams"][3]["points_for"]
@@ -148,35 +143,35 @@ if team_Playing == "Falcons":
     offense_Scored = data["conferences"][1]["divisions"][2]["teams"][2]["points_for"]
 if team_Playing == "Buccaneers":
     offense_Scored = data["conferences"][1]["divisions"][2]["teams"][3]["points_for"]
-if team_Playin g== "Rams":
-    offense_Scored =data["conferences"][1]["divisions"][3]["teams"][0]["points_for"]
-if team_playing == "Seahawks":
+if team_Playing == "Rams":
+    offense_Scored = data["conferences"][1]["divisions"][3]["teams"][0]["points_for"]
+if team_Playing == "Seahawks":
     offense_Scored = data["conferences"][1]["divisions"][3]["teams"][1]["points_for"]
 if team_Playing == "Cardinals":
     offense_Scored = data["conferences"][1]["divisions"][3]["teamss"][2]["points_for"]
 if team_Playing == "49ers":
     offense_Scored = data["conferences"][1]["divisions"][3]["teams"][3]["points_for"]
 
- print(my_Defense "is going up against:" team_Playing)
+print("The" + " " + my_Defense + " are going up against:" + " " + team_Playing)
 
 if my_Defense == "Patriots":
     sos = data["conferences"][0]["divisions"][0]["teams"][0]["strength_of_schedule"]["sos"]
 if my_Defense == "Bills":
-    sos =data["conferences"][0]["divisions"][0]["teams"][1]["strength_of_schedule"]["sos"]
+    sos = data["conferences"][0]["divisions"][0]["teams"][1]["strength_of_schedule"]["sos"]
 if my_Defense == "Jets":
-    sos =data["conferences"][0]["divisions"][0]["teams"][2]["strength_of_schedule"]["sos"]
+    sos = data["conferences"][0]["divisions"][0]["teams"][2]["strength_of_schedule"]["sos"]
 if my_Defense == "Dolphins":
-    sos =data["conferences"][0]["divisions"][0]["teams"][3]["strength_of_schedule"]["sos"]
+    sos = data["conferences"][0]["divisions"][0]["teams"][3]["strength_of_schedule"]["sos"]
 if my_Defense == "Steelers":
-    sos =data["conferences"][0]["divisions"][1]["teams"][0]["strength_of_schedule"]["sos"]
+    sos = data["conferences"][0]["divisions"][1]["teams"][0]["strength_of_schedule"]["sos"]
 if my_Defense == "Ravens":
-    sos =data["conferences"][0]["divisions"][1]["teams"][1]["strength_of_schedule"]["sos"]
+    sos = data["conferences"][0]["divisions"][1]["teams"][1]["strength_of_schedule"]["sos"]
 if my_Defense == "Bengals":
-    sos =data["conferences"][0]["divisions"][1]["teams"][2]["strength_of_schedule"]["sos"]
+    sos = data["conferences"][0]["divisions"][1]["teams"][2]["strength_of_schedule"]["sos"]
 if my_Defense == "Browns":
     sos = data["conferences"][0]["divisions"][1]["teams"][3]["strength_of_schedule"]["sos"]
 if my_Defense == "Titans":
-   sos = data["conferences"][0]["divisions"][2]["teams"][0]["strength_of_schedule"]["sos"]
+    sos = data["conferences"][0]["divisions"][2]["teams"][0]["strength_of_schedule"]["sos"]
 if my_Defense == "Jaguars":
     sos = data["conferences"][0]["divisions"][2]["teams"][1]["strength_of_schedule"]["sos"]
 if my_Defense == "Texans":
@@ -224,7 +219,6 @@ if my_Defense == "Cardinals":
 if my_Defense == "49ers":
     sos = data["conferences"][1]["divisions"][3]["teams"][3]["strength_of_schedule"]["sos"]
 
-
 if team_Playing == "Patriots":
     sos2 = data["conferences"][0]["divisions"][0]["teams"][0]["strength_of_schedule"]["sos"]
 if team_Playing == "Bills":
@@ -233,7 +227,7 @@ if team_Playing == "Jets":
     sos2 = data["conferences"][0]["divisions"][0]["teams"][2]["strength_of_schedule"]["sos"]
 if team_Playing == "Dolphins":
     sos2 = data["conferences"][0]["divisions"][0]["teams"][3]["strength_of_schedule"]["sos"]
-if team_Playing== "Steelers":
+if team_Playing == "Steelers":
     sos2 = data["conferences"][0]["divisions"][1]["teams"][0]["strength_of_schedule"]["sos"]
 if team_Playing == "Ravens":
     sos2 = data["conferences"][0]["divisions"][1]["teams"][1]["strength_of_schedule"]["sos"]
@@ -261,48 +255,46 @@ if team_Playing == "Eagles":
     sos2 = data["conferences"][1]["divisions"][0]["teams"][0]["strength_of_schedule"]["sos"]
 if team_Playing == "Cowboys":
     sos2 = data["conferences"][1]["divisions"][0]["teams"][1]["strength_of_schedule"]["sos"]
-if team_Playing== "Redskins":
+if team_Playing == "Redskins":
     sos2 = data["conferences"][1]["divisions"][0]["teams"][2]["strength_of_schedule"]["sos"]
-if team_Playing== "Giants":
+if team_Playing == "Giants":
     sos2 = data["conferences"][1]["divisions"][0]["teams"][3]["strength_of_schedule"]["sos"]
 if team_Playing == "Vikings":
     sos2 = data["conferences"][1]["divisions"][1]["teams"][0]["strength_of_schedule"]["sos"]
-if team_Playing== "Lions":
+if team_Playing == "Lions":
     sos2 = data["conferences"][1]["divisions"][1]["teams"][1]["strength_of_schedule"]["sos"]
-if team_Playing== "Packers":
+if team_Playing == "Packers":
     sos2 = data["conferences"][1]["divisions"][1]["teams"][2]["strength_of_schedule"]["sos"]
-if team_Playing== "Bears":
+if team_Playing == "Bears":
     sos2 = data["conferences"][1]["divisions"][1]["teams"][3]["strength_of_schedule"]["sos"]
-if team_Playing== "Saints":
+if team_Playing == "Saints":
     sos2 = data["conferences"][1]["divisions"][2]["teams"][0]["strength_of_schedule"]["sos"]
-if team_Playing== "Panthers":
+if team_Playing == "Panthers":
     sos2 = data["conferences"][1]["divisions"][2]["teams"][1]["strength_of_schedule"]["sos"]
-if team_Playing== "Falcons":
+if team_Playing == "Falcons":
     sos2 = data["conferences"][1]["divisions"][2]["teams"][2]["strength_of_schedule"]["sos"]
-if team_Playing== "Buccaneers":
+if team_Playing == "Buccaneers":
     sos2 = data["conferences"][1]["divisions"][2]["teams"][3]["strength_of_schedule"]["sos"]
-if team_Playing== "Rams":
+if team_Playing == "Rams":
     sos2 = data["conferences"][1]["divisions"][3]["teams"][0]["strength_of_schedule"]["sos"]
-if team_Playing== "Seahawks":
+if team_Playing == "Seahawks":
     sos2 = data["conferences"][1]["divisions"][3]["teams"][1]["strength_of_schedule"]["sos"]
-if team_Playing== "Cardinals":
+if team_Playing == "Cardinals":
     sos2 = data["conferences"][1]["divisions"][3]["teams"][2]["strength_of_schedule"]["sos"]
-if team_Playing== "49ers":
+if team_Playing == "49ers":
     sos2 = data["conferences"][1]["divisions"][3]["teams"][3]["strength_of_schedule"]["sos"]
 
+print("The strength of schedules have been recorded!\n ")
 
-print("The strength of schedules have been recorded!/n ")    
-
-
- #This is for the second Defense that the user is considering choosing
+# This is for the second Defense that the user is considering choosing
 
 
 
-my_Defense2 = input("What defense are you going to play?(Enter their mascot name)\n")
+my_Defense2 = input("What other defense are you going to play?(Enter their mascot name)\n")
 
 if my_Defense2 == "Patriots":
     def_Allowed2 = data["conferences"][0]["divisions"][0]["teams"][0]["points_against"]
-if my_defense2 == "Bills":
+if my_Defense2 == "Bills":
     def_Allowed2 = data["conferences"][0]["divisions"][0]["teams"][1]["points_against"]
 if my_Defense2 == "Jets":
     def_Allowed2 = data["conferences"][0]["divisions"][0]["teams"][2]["points_against"]
@@ -365,11 +357,11 @@ if my_Defense2 == "Cardinals":
 if my_Defense2 == "49ers":
     def_Allowed2 = data["conferences"][1]["divisions"][3]["teams"][3]["points_against"]
 
-print("Your second choice for defense is:" my_Defense2) 
+print("Your second choice for defense is:" + " " + my_Defense2 )
 
-#Now, this is the second team the users second defense is up against. 
+# Now, this is the second team the users second defense is up against.
 
-team_Playing2 = input("What team are these guys playing?\n")
+team_Playing2 = input("What team are they playing?\n")
 
 if team_Playing2 == "Patriots":
     offense_Scored2 = data["conferences"][0]["divisions"][0]["teams"][0]["points_for"]
@@ -383,7 +375,7 @@ if team_Playing2 == "Steelers":
     offense_Scored2 = data["conferences"][0]["divisions"][1]["teams"][0]["points_for"]
 if team_Playing2 == "Ravens":
     offense_Scored2 = data["conferences"][0]["divisions"][1]["teams"][1]["points_for"]
-if Team_Playing2 == "Bengals":
+if team_Playing2 == "Bengals":
     offense_Scored2 = data["conferences"][0]["divisions"][1]["teams"][2]["points_for"]
 if team_Playing2 == "Browns":
     offense_Scored2 = data["conferences"][0]["divisions"][1]["teams"][3]["points_for"]
@@ -427,34 +419,35 @@ if team_Playing2 == "Falcons":
     offense_Scored2 = data["conferences"][1]["divisions"][2]["teams"][2]["points_for"]
 if team_Playing2 == "Buccaneers":
     offense_Scored2 = data["conferences"][1]["divisions"][2]["teams"][3]["points_for"]
-if team_Playing2== "Rams":
-    offense_Scored2 =data["conferences"][1]["divisions"][3]["teams"][0]["points_for"]
-if team_playing2 == "Seahawks":
+if team_Playing2 == "Rams":
+    offense_Scored2 = data["conferences"][1]["divisions"][3]["teams"][0]["points_for"]
+if team_Playing2 == "Seahawks":
     offense_Scored2 = data["conferences"][1]["divisions"][3]["teams"][1]["points_for"]
 if team_Playing2 == "Cardinals":
     offense_Scored2 = data["conferences"][1]["divisions"][3]["teamss"][2]["points_for"]
 if team_Playing2 == "49ers":
     offense_Scored2 = data["conferences"][1]["divisions"][3]["teams"][3]["points_for"]
 
+print("The" + " " + my_Defense2 + " are going up against:" + " " + team_Playing2)
 
 if my_Defense2 == "Patriots":
     sos3 = data["conferences"][0]["divisions"][0]["teams"][0]["strength_of_schedule"]["sos"]
 if my_Defense2 == "Bills":
-    sos3 =data["conferences"][0]["divisions"][0]["teams"][1]["strength_of_schedule"]["sos"]
+    sos3 = data["conferences"][0]["divisions"][0]["teams"][1]["strength_of_schedule"]["sos"]
 if my_Defense2 == "Jets":
-    sos3 =data["conferences"][0]["divisions"][0]["teams"][2]["strength_of_schedule"]["sos"]
+    sos3 = data["conferences"][0]["divisions"][0]["teams"][2]["strength_of_schedule"]["sos"]
 if my_Defense2 == "Dolphins":
-    sos3 =data["conferences"][0]["divisions"][0]["teams"][3]["strength_of_schedule"]["sos"]
+    sos3 = data["conferences"][0]["divisions"][0]["teams"][3]["strength_of_schedule"]["sos"]
 if my_Defense2 == "Steelers":
-    sos3 =data["conferences"][0]["divisions"][1]["teams"][0]["strength_of_schedule"]["sos"]
+    sos3 = data["conferences"][0]["divisions"][1]["teams"][0]["strength_of_schedule"]["sos"]
 if my_Defense2 == "Ravens":
-    sos3 =data["conferences"][0]["divisions"][1]["teams"][1]["strength_of_schedule"]["sos"]
+    sos3 = data["conferences"][0]["divisions"][1]["teams"][1]["strength_of_schedule"]["sos"]
 if my_Defense2 == "Bengals":
-    sos3 =data["conferences"][0]["divisions"][1]["teams"][2]["strength_of_schedule"]["sos"]
+    sos3 = data["conferences"][0]["divisions"][1]["teams"][2]["strength_of_schedule"]["sos"]
 if my_Defense2 == "Browns":
     sos3 = data["conferences"][0]["divisions"][1]["teams"][3]["strength_of_schedule"]["sos"]
 if my_Defense2 == "Titans":
-   sos3 = data["conferences"][0]["divisions"][2]["teams"][0]["strength_of_schedule"]["sos"]
+    sos3 = data["conferences"][0]["divisions"][2]["teams"][0]["strength_of_schedule"]["sos"]
 if my_Defense2 == "Jaguars":
     sos3 = data["conferences"][0]["divisions"][2]["teams"][1]["strength_of_schedule"]["sos"]
 if my_Defense2 == "Texans":
@@ -502,9 +495,6 @@ if my_Defense2 == "Cardinals":
 if my_Defense2 == "49ers":
     sos3 = data["conferences"][1]["divisions"][3]["teams"][3]["strength_of_schedule"]["sos"]
 
-
-
-
 if team_Playing2 == "Patriots":
     sos4 = data["conferences"][0]["divisions"][0]["teams"][0]["strength_of_schedule"]["sos"]
 if team_Playing2 == "Bills":
@@ -513,7 +503,7 @@ if team_Playing2 == "Jets":
     sos4 = data["conferences"][0]["divisions"][0]["teams"][2]["strength_of_schedule"]["sos"]
 if team_Playing2 == "Dolphins":
     sos4 = data["conferences"][0]["divisions"][0]["teams"][3]["strength_of_schedule"]["sos"]
-if team_Playing2== "Steelers":
+if team_Playing2 == "Steelers":
     sos4 = data["conferences"][0]["divisions"][1]["teams"][0]["strength_of_schedule"]["sos"]
 if team_Playing2 == "Ravens":
     sos4 = data["conferences"][0]["divisions"][1]["teams"][1]["strength_of_schedule"]["sos"]
@@ -541,55 +531,48 @@ if team_Playing2 == "Eagles":
     sos4 = data["conferences"][1]["divisions"][0]["teams"][0]["strength_of_schedule"]["sos"]
 if team_Playing2 == "Cowboys":
     sos4 = data["conferences"][1]["divisions"][0]["teams"][1]["strength_of_schedule"]["sos"]
-if team_Playing2== "Redskins":
+if team_Playing2 == "Redskins":
     sos4 = data["conferences"][1]["divisions"][0]["teams"][2]["strength_of_schedule"]["sos"]
-if team_Playing2== "Giants":
+if team_Playing2 == "Giants":
     sos4 = data["conferences"][1]["divisions"][0]["teams"][3]["strength_of_schedule"]["sos"]
 if team_Playing2 == "Vikings":
     sos4 = data["conferences"][1]["divisions"][1]["teams"][0]["strength_of_schedule"]["sos"]
-if team_Playing2== "Lions":
+if team_Playing2 == "Lions":
     sos4 = data["conferences"][1]["divisions"][1]["teams"][1]["strength_of_schedule"]["sos"]
-if team_Playing2== "Packers":
+if team_Playing2 == "Packers":
     sos4 = data["conferences"][1]["divisions"][1]["teams"][2]["strength_of_schedule"]["sos"]
-if team_Playing2== "Bears":
+if team_Playing2 == "Bears":
     sos4 = data["conferences"][1]["divisions"][1]["teams"][3]["strength_of_schedule"]["sos"]
-if team_Playing2== "Saints":
+if team_Playing2 == "Saints":
     sos4 = data["conferences"][1]["divisions"][2]["teams"][0]["strength_of_schedule"]["sos"]
-if team_Playing2== "Panthers":
+if team_Playing2 == "Panthers":
     sos4 = data["conferences"][1]["divisions"][2]["teams"][1]["strength_of_schedule"]["sos"]
-if team_Playing2== "Falcons":
+if team_Playing2 == "Falcons":
     sos4 = data["conferences"][1]["divisions"][2]["teams"][2]["strength_of_schedule"]["sos"]
-if team_Playing2== "Buccaneers":
+if team_Playing2 == "Buccaneers":
     sos4 = data["conferences"][1]["divisions"][2]["teams"][3]["strength_of_schedule"]["sos"]
-if team_Playing2== "Rams":
+if team_Playing2 == "Rams":
     sos4 = data["conferences"][1]["divisions"][3]["teams"][0]["strength_of_schedule"]["sos"]
-if team_Playing2== "Seahawks":
+if team_Playing2 == "Seahawks":
     sos4 = data["conferences"][1]["divisions"][3]["teams"][1]["strength_of_schedule"]["sos"]
-if team_Playing2== "Cardinals":
+if team_Playing2 == "Cardinals":
     sos4 = data["conferences"][1]["divisions"][3]["teams"][2]["strength_of_schedule"]["sos"]
-if team_Playing2== "49ers":
+if team_Playing2 == "49ers":
     sos4 = data["conferences"][1]["divisions"][3]["teams"][3]["strength_of_schedule"]["sos"]
 
-print("The strength of schedules have been recorded!/n ")
+print("The strength of schedules have been recorded!\n ")
 
+print("The Strength of your Defenses schedule is ", sos, ", the team you are playing schedule strength is", sos3, ",")
 
-
-
-
-print("The Strength of your Defenses schedule is ",sos,", the team you are playing schedule strength is",sos3,",")
-
-    
-    
-
-print("Defense allowed", def_Allowed," points, The offense they are playing scored ",offense_Scored," this season.")
+print("Defense allowed", def_Allowed, " points, The offense they are playing scored ", offense_Scored, " this season.")
 point_Differential = offense_Scored - def_Allowed
-print("Point Differential: ",point_Differential)
+print("Point Differential: ", point_Differential)
 
 
 # the point differential determines the likelihood of the defenses success, the user should track the out put and compare it to the next defenses out put to determine a winner.
-#print("it is like golf, the smaller the number the better:",point_Differential)
-#if point_Differential<=
-#data["conferences"][0]["divisions"][0]["teams"][0]["points_against"]
+# print("it is like golf, the smaller the number the better:",point_Differential)
+# if point_Differential<=
+# data["conferences"][0]["divisions"][0]["teams"][0]["points_against"]
 
 
 
