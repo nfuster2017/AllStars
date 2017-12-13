@@ -23,7 +23,7 @@ my_Defense = input("What defense are you going to play?(Enter their mascot name)
 
 if my_Defense == "Patriots":
     def_Allowed = data["conferences"][0]["divisions"][0]["teams"][0]["points_against"]
-if my_defense == "Bills":
+if my_Defense == "Bills":
     def_Allowed = data["conferences"][0]["divisions"][0]["teams"][1]["points_against"]
 if my_Defense == "Jets":
     def_Allowed = data["conferences"][0]["divisions"][0]["teams"][2]["points_against"]
