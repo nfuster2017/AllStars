@@ -1,3 +1,9 @@
+# course: INST126
+# date: 12/13/2017
+# Group name: The Allstars
+# Project description: Our program is a platform Fantasy Football users can use to compare the stats of there top 2 defensive teams
+# against the teams they will play for the week. 
+########################################################################
 # Imports functions used for extracting json data
 
 import urllib.request, urllib.parse, urllib.error
@@ -80,10 +86,9 @@ if my_Defense == "Cardinals":
     def_Allowed = data["conferences"][1]["divisions"][3]["teams"][2]["points_against"]
 if my_Defense == "49ers":
     def_Allowed = data["conferences"][1]["divisions"][3]["teams"][3]["points_against"]
-print("Your first choice for defense is:" + " " + my_Defense )
+print("Your first choice for defense is:" + " " + my_Defense)
 
 # Below is the team your first option defense is up against. Section determines how well their offense has played this season.
-
 
 team_Playing = input("What team are they playing?\n")
 
@@ -287,8 +292,6 @@ if team_Playing == "49ers":
 print("The strength of schedules have been recorded!\n ")
 
 # This is for the second Defense that the user is considering choosing
-
-
 
 my_Defense2 = input("What other defense are you going to play?(Enter their mascot name)\n")
 
@@ -562,7 +565,7 @@ if team_Playing2 == "49ers":
 
 print("The strength of schedules have been recorded!\n ")
 
-print("The Strength of your Defenses schedule is ", sos, ", the team you are playing schedule strength is", sos3, ",")
+print("The Strength of your Defenses schedule is ", sos, ", the team you are playing against strength of schedule is", sos3, ",")
 
 print("Defense allowed", def_Allowed, " points, The offense they are playing scored ", offense_Scored, " this season.")
 point_Differential = offense_Scored - def_Allowed
