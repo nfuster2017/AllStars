@@ -3,6 +3,15 @@
 # Group name: The Allstars
 # Project description: Our program is a platform Fantasy Football users can use to compare the stats of there top 2 defensive teams
 # against the teams they will play for the week. 
+##Tem roles and contributions
+##Nick – Program Architect. Controlled the concept and aim of the project. Provided API Key and managed to hard code the data from nested
+##list into if statements for each team, and provided comments.
+##CJ – Added interactive print statements, on copying the code and editing the variables in order for the user to only need to run the
+##program once, and compare both of their matchups.
+##Mahdre – Worked on developing a for loop to stop user from entering same team name twice, input validations, and assisted on coding
+##style and corrections. 
+##Lindsay – Focused mainly on coding style, making sure that spaces, indentation, spelling were correct on all if statements, 
+##and provided comments.
 ########################################################################
 # Imports functions used for extracting json data
 
